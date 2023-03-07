@@ -1,0 +1,9 @@
+.idea
+.terraform
+*.tfvars
+*.tfstate
+*.backup
+gcp-credentials.json
+variables.tf
+??cred??
+gcp-credentials-*.json
