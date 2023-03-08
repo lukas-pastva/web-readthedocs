@@ -8,8 +8,6 @@ if [ "${NAME}" != "" ]; then
     sed -i -e "s|{NAME}|${NAME}|g" /docs/conf.py
 fi
 
-
-
 if [ ! -f ./conf.py ]; then
     echo "== Sphinx docs is not initialized =="
     echo " - Map a volume to /docs to work on existing documentaiton"
