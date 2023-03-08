@@ -2,7 +2,7 @@
 
 if [ "${DATA}" != "" ]; then
     rm /docs/index.rst
-    echo -e "${DATA}" > /docs/index.rst
+    echo -e "${DATA}" | base64 -d > /docs/index.rst
 fi
 
 if [ ! -f ./conf.py ]; then
