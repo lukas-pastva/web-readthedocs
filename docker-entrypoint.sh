@@ -4,6 +4,11 @@ if [ "${DATA}" != "" ]; then
     rm /docs/index.rst
     echo -e "${DATA}" | base64 -d > /docs/index.rst
 fi
+if [ "${NAME}" != "" ]; then
+    sed -i -e "s|{NAME}|${NAME}|g" /docs/conf.py
+fi
+
+
 
 if [ ! -f ./conf.py ]; then
     echo "== Sphinx docs is not initialized =="
