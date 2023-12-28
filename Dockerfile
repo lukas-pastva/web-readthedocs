@@ -1,6 +1,6 @@
 FROM pardahlman/sphinx
 
-COPY ./docs /docs
+COPY ./app /app
 
 # RUN rm /docker-entrpoint.sh
 ADD docker-entrypoint.sh /
